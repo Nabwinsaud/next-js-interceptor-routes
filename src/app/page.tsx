@@ -15,10 +15,10 @@ export default async function Home() {
   return (
     <main className="w-full h-screen px-20 xl:pt-0 max-w-7xl mx-auto">
       <section className="flex h-full flex-col w-full">
-        <h1>The app router parallel data fetching and more stuff</h1>
+        <h1 className="text-xl my-6">The app router interceptor </h1>
         <div className="grid grid-cols-2 sm:grid-cols-3 sm:gap-y-3 sm:gap-x-4  lg:grid-cols-4 lg:gap-6 xl:grid-cols-5 xlg:gap-x-6 xlg:gap-y-6">
           {products.map((product) => (
-            <div key={product.id}>
+            <div key={product.id} className="">
               <Product product={product} />
             </div>
           ))}

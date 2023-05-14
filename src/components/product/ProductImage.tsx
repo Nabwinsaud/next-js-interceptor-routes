@@ -1,5 +1,6 @@
 "use client";
 
+import Loading from "@/app/(.)product/loading";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -9,14 +10,15 @@ type Props = {
 
 export default function ProductImage({ product }: Props) {
   const [loading, setLoading] = useState(true);
+  console.log("loading state is", loading);
 
   return (
     <>
       <Image
         src={product.image}
         alt={product.title}
-        width={400}
-        height={1000}
+        width={250}
+        height={20}
         className={`object-contain duration-700 ease-in-out group-hover:opacity-75 ${
           loading
             ? "scale-110 blur-2xl grayscale"

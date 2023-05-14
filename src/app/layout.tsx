@@ -4,8 +4,8 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Introduction to App Router",
-  description: "The Next.js app router",
+  title: "Introduction to App Router (interceptor parallel routes)",
+  description: "The Next.js app router interceptor features",
 };
 
 export default function RootLayout({
